@@ -1,0 +1,33 @@
+{
+  "name": "web-builder-backend.skysync",
+  "version": "1.0.0",
+  "description": "This is the web builder's backend of skysync. That creates best websites with the help of LLM's",
+  "keywords": [
+    "skysync",
+    "skysync-web-builder",
+    "web-builder.skysync",
+    "skysync-web-builder",
+    "skysync-web"
+  ],
+  "homepage": "https://github.com/akashmishra-777/web-builder-backend.skysync#readme",
+  "bugs": {
+    "url": "https://github.com/akashmishra-777/web-builder-backend.skysync/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashmishra-777/web-builder-backend.skysync.git"
+  },
+  "license": "ISC",
+  "author": "Akash Mishra",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.1"
+  }
+}
