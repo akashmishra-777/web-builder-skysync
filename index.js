@@ -4,7 +4,7 @@ const app = express();
 const dbConnectionReference = require('./db/dbConnection.js');
 const casualRouter = require('./routes/casualRoute.js');
 
-
+app.set("trust proxy", true);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
