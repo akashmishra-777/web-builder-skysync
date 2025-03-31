@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require('express');
 const app = express();
 const dbConnectionReference = require('./db/dbConnection.js');
-const casualRouter = require('./routes/casualRoute.js');
+const casualRouter = require('./routes/mainRoute.js');
 
 app.set("trust proxy", true);
 app.use(express.json());
