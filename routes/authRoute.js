@@ -1,14 +1,13 @@
 const express = require("express")
 const router = express.Router()
 const createAccount = require("../controllers/auth/registerAccount.js")
+const verifyUserAccount  = require("../controllers/auth/accountVerification.js")
 
 
 router.post("/register",createAccount)
 
 
-router.get("/account-verification/:id",(req,res)=>{
-    res.json({msg:"Account Verified. "+req.params.id})
-})
+router.get("/account-verification/:id",verifyUserAccount)
 
 
 module.exports = router
