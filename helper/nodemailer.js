@@ -1,15 +1,19 @@
 const nm = require("nodemailer");
 
 
+
+
 const transporter = nm.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: {
-        user: "root00skysync@gmail.com",
-        pass: process.env.APP_PASSWORD,
-    },
-});
+  service:"gmail",
+  auth:{
+    user: "root00skysync@gmail.com",
+    pass: process.env.APP_PASSWORD,
+  }
+})
+
+
+
+
 
 async function sendMail(to,accountVerificationUrl) {
     try {
